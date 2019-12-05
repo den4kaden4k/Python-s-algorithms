@@ -5,8 +5,8 @@
 
 a = int(input("Введите трехзначное целое число:\n"))
 num1 = a % 10
-num2 = int(a / 10)
-num3 = int(num2 / 10)
-summa = num1 + num2 % 10 + num3 % 10
-multi = num1 * (num2 % 10) * (num3 % 10)
+num2 = (a // 10) % 10
+num3 = (a // 100) % 10
+summa = num1 + num2 + num3
+multi = num1 * num2 * num3
 print(f'Сумма цифр числа {a} = {summa},\nПроизведение цифр числа {a} = {multi}')
