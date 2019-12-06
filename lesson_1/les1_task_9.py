@@ -9,9 +9,7 @@ b = input('Второе число\n')
 c = input('Третье число\n')
 if b < a < c or b > a > c:
     print(f'Число {a} среднее')
-    quit()
-if a < b < c or a > b > c:
+elif a < b < c or a > b > c:
     print(f'Число {b} среднее')
-    quit()
 else:
     print(f'Число {c} среднее')
