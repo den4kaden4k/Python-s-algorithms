@@ -5,7 +5,7 @@
 def count(number, digit, pos=0):
     if pos == len(number):
         return 0
-    if int(number[pos]) == digit:
+    elif int(number[pos]) == digit:
         return 1 + count(number, digit, pos+1)
     else:
         return count(number, digit, pos+1)

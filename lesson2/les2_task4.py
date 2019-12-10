@@ -5,7 +5,7 @@
 def function(n, m=1):
     if n == m:
         return 1
-    if m < n and m % 2 != 0:
+    elif m < n and m % 2 != 0:
         return -1 / 2**m + function(n, m+1)
     else:
         return 1 / 2**m + function(n, m+1)
