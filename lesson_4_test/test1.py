@@ -1,0 +1,1 @@
+print('lesson4_test')
